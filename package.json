@@ -1,0 +1,49 @@
+{
+  "name": "webppackstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -d --watch",
+    "clean": "rimraf dist/",
+    "http-server": "http-server dist/",
+    "serve": "webpack-dev-server",
+    "build": "SET NODE_ENV=production && npm run clean && webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.2",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-stage-2": "^7.8.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.9.0",
+    "image-webpack-loader": "^6.0.0",
+    "node-sass": "^4.13.0",
+    "rimraf": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "bundle-loader": "^0.5.5",
+    "prop-types": "^15.5.10",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-loadable": "^5.5.0",
+    "react-router-dom": "^4.1.2"
+  }
+}
